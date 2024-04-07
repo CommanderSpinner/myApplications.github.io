@@ -1,0 +1,29 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(134, 194, 163);
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    body {
+        background-color: rgb(134, 194, 163);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+li {
+
+}
