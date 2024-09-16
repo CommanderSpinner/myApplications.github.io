@@ -1,12 +1,12 @@
 @media only screen and (max-width: 600px) {
     body {
-        background-color: rgb(134, 194, 163);
+        background-color: rgb(202, 179, 45);
     }
 }
 
 @media only screen and (min-width: 601px) {
     body {
-        background-color: rgb(134, 194, 163);
+        background-color: rgb(202, 179, 45);
     }
 }
 
@@ -17,11 +17,15 @@ body {
     box-sizing: border-box;
 }
 
+span{
+    color: red;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
     text-align: left;
-    background-color: rgb(106, 169, 136);
+    background-color: rgb(253, 253, 253);
 }
 
 .text {
@@ -33,7 +37,7 @@ body {
 }
 
 p, h1 {
-    color: whitesmoke;
+    color: black;
 }
 
 
