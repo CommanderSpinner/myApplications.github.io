@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
     body {
-        background-color: rgb(202, 179, 45);
+        background-color: rgb(218, 192, 23);
     }
 }
 
@@ -15,10 +15,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-span{
-    color: red;
 }
 
 .container {
@@ -43,4 +39,12 @@ p, h1 {
 
 li {
     list-style: none;
+}
+
+a {
+    color: black;
+}
+
+span{
+    color: red;
 }
