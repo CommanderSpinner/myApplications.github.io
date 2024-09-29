@@ -1,13 +1,22 @@
 @media only screen and (max-width: 600px) {
     body {
-        background-color: rgb(218, 192, 23);
+        background-color: rgb(113, 219, 157);
+
+        main {
+            background-color: white;
+        }
     }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 250px) {
     body {
-        background-color: rgb(202, 179, 45);
+        background-color: rgb(74, 167, 253);
     }
+}
+
+main {
+    background-color: rgb(113, 219, 157);
+    width: 70%;
 }
 
 body {
@@ -18,10 +27,12 @@ body {
 }
 
 .container {
+    border-radius: 5px;
+    height: 97vh;
     width: 80%;
     margin: 0 auto;
     text-align: left;
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(113, 219, 157);
 }
 
 .text {
