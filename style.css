@@ -14,9 +14,14 @@
     }
 }
 
+body {
+    color: rgb(117, 88, 88);
+}
+
 main {
     background-color: rgb(113, 219, 157);
     width: 70%;
+
 }
 
 body {
@@ -43,17 +48,21 @@ body {
     /*text-align: left;*/
 }
 
-p, h1 {
-    color: black;
-}
-
-
 li {
     list-style: none;
 }
 
 a {
-    color: black;
+    color: rgb(117, 88, 88);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+a span:hover {
+    text-decoration: underline;
+    color: red;
 }
 
 span{
