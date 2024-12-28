@@ -1,67 +1,45 @@
-@media only screen and (max-width: 500px) {
-    body {
-        background-color: rgb(113, 219, 157);
-
-        main {
-            background-color: rgb(216, 209, 209);
-            border-radius: 5px;
-        }
-    }
-}
-
-@media only screen and (min-width: 501px) {
-    body {
-        background-color: rgb(2, 240, 14);
-    }
-}
-
 body {
-    color: rgb(117, 88, 88);
+    background: #f8f9fa; /* Light gray background */
+    font-family: 'Arial', sans-serif;
 }
-
-main {
-    background-color: rgb(113, 219, 157);
-    width: 70%;
-
+header {
+    background-color: #408837;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
-
-.container {
-    border-radius: 5px;
-    height: 97vh;
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
-    background-color: rgb(113, 219, 157);
+header p {
+    font-size: 1.2rem;
 }
-
-.text {
-    margin-left: 10%;
+ul.list-group {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-li {
-    list-style: none;
+ul.list-group li {
+    font-size: 1rem;
 }
-
-a {
-    color: rgb(117, 88, 88);
+ul.list-group li a {
+    color: #007bff;
     text-decoration: none;
 }
-
-a:hover {
+ul.list-group li a:hover {
     text-decoration: underline;
 }
-a span:hover {
-    text-decoration: underline;
-    color: red;
+ul.list-group li.text-danger a {
+    color: #dc3545;
 }
-
-span{
-    color: red;
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+body .text-warning{
+    color:#dc3545 !important;
 }
