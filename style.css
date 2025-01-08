@@ -1,5 +1,9 @@
+:root{
+	--background_color: #eaeaea;
+	
+}
 body {
-    background: #f8f9fa; /* Light gray background */
+    background: var(--background_color) !important; /* Light gray background */
     font-family: 'Arial', sans-serif;
 }
 header {
@@ -32,7 +36,7 @@ ul.list-group li a:hover {
     text-decoration: underline;
 }
 ul.list-group li.text-danger a {
-    color: #dc3545;
+    color: #dc3545 !important;
 }
 footer {
     text-align: center;
@@ -42,4 +46,7 @@ footer {
 }
 body .text-warning{
     color:#dc3545 !important;
+}
+a{
+	color: #333333 !important;
 }
