@@ -8,6 +8,7 @@
 
 body {
     background: var(--background_color) !important;
+    color: var(--background_color) !important;
     font-family: 'Arial', sans-serif;
 }
 
@@ -28,7 +29,7 @@ header p {
 }
 
 ul.list-group {
-    background: var(--list_background_color);
+    background: var(--list_background_color) !important;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
