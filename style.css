@@ -1,6 +1,6 @@
 :root{
 	--background_color: #eaeaea;
-	--text_color: #6c757d;
+	--text_color: #464646;
     --warning_color: #dc3545;
     --primary_color: #55a04b;
     --list_background_color: white;
@@ -58,7 +58,7 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
-    color: #6c757d;
+    color: var(--text_color);
 }
 
 body .text-warning{
@@ -67,6 +67,14 @@ body .text-warning{
 
 a{
 	color: var(--text_color) !important;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* The switch - the box around the slider */
