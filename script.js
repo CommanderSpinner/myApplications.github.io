@@ -6,3 +6,5 @@ console.log("js script loaded");
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("year").innerHTML = new Date().getFullYear();
 });
+
+// switch to ligth/dark mode
