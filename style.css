@@ -55,6 +55,10 @@ ul.list-group li.text-danger a {
     color: var(--warning_color) !important;
 }
 
+p, label{
+    color: var(--text_color) !important;
+}
+
 footer {
     text-align: center;
     padding: 20px;
@@ -68,6 +72,14 @@ body .text-warning{
 
 a{
 	color: var(--text_color) !important;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;       /* Positioniert es am unteren Rand */
+    left: 0;         /* Positioniert es am linken Rand */
+    width: 100%;
+    text-align: center;
 }
 
 footer a {
