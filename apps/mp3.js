@@ -7,6 +7,7 @@ const fileInput = document.getElementById('fileInput');
 
 // Add an event listener to handle the files when the user clicks the submit button
 document.getElementById('submitButton').addEventListener('click', () => {
+    console.log("submit");
     // Get the selected files from the input
     const files = fileInput.files;
 
