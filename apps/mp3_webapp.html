@@ -27,16 +27,21 @@
             </label>
             <label id="label_for_theme">switch theme</label>
             </header>
-            <main>
-                <form action="/upload" method="post" enctype="multipart/form-data">
-                    <div class="form-container">
-                        <label for="files">chose mp3 files:</label>
-                        <input type="file" id="files" name="files[]" multiple>
-                    </div>
-                    <div class="form-container">
-                        <input type="submit" id="play_btn" value="Play">
-                    </div>
-                </form>
+            <main>>
+                <div class="container mt-4">
+                    <form action="/upload" method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col">
+                                <label for="files">Choose MP3 files:</label>
+                                <input type="file" id="files" name="files[]" multiple class="form-control">
+                            </div>
+                            <div class="col">
+                                <input type="submit" id="submitButton" value="Submit" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
                 <div id="output_files"></div>
             </main>
             <footer class="mt-4">
