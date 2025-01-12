@@ -1,5 +1,7 @@
 // mp3.js
 
+console.log("mp3 player script is laoded");
+
 // Select the file input element
 const fileInput = document.getElementById('fileInput');
 
@@ -15,14 +17,6 @@ document.getElementById('submitButton').addEventListener('click', () => {
         Array.from(files).forEach((file, index) => {
             console.log(`File ${index + 1}:`, file);
 
-            // Example: Read each file content if needed
-            const reader = new FileReader();
-
-            reader.onload = (event) => {
-                console.log(`Content of file ${index + 1}:`, event.target.result); // File content as string
-            };
-
-            reader.readAsText(file); // Adjust to readAsDataURL for binary or image files
         });
     } else {
         console.log('No files selected.');
