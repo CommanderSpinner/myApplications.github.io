@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // switch to ligth/dark mode
-
 let darkmode = false;
 function changeTheme(){
   console.log("theme changed");
