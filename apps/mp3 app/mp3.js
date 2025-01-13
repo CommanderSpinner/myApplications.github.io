@@ -2,24 +2,36 @@
 
 console.log("mp3 player script is laoded");
 
-// Select the file input element
-const fileInput = document.getElementById('fileInput');
+const fileInput = document.getElementById('files');
+const audioPlayer = document.getElementById('audioPlayer');
+const startButton = document.getElementById('startButton');
+const stopButton = document.getElementById('stopButton');
 
-// Add an event listener to handle the files when the user clicks the submit button
-document.getElementById('submitButton').addEventListener('click', () => {
-    console.log("submit");
-    // Get the selected files from the input
-    const files = fileInput.files;
+// Handle file upload
+fileInput.addEventListener('change', () => {
+    for (const file of fileInput.files){
+        if (file) {
+        const objectURL = URL.createObjectURL(file);
+        audioPlayer.src = objectURL;
+        startButton.disabled = false; // Enable the Start button
+        stopButton.disabled = false;  // Enable the Stop button
+        } else {
+        console.error("No file selected");
+        }
+    } 
+  });
 
-    if (files.length > 0) {
-        console.log(`You have uploaded ${files.length} files.`);
-        
-        // Loop through the FileList and process each file
-        Array.from(files).forEach((file, index) => {
-            console.log(`File ${index + 1}:`, file);
+// Start playback
+startButton.addEventListener('click', () => {
+    if (audioPlayer.src) {
+      audioPlayer.play();
+    }
+  });
 
-        });
-    } else {
-        console.log('No files selected.');
+  // Stop playback
+  stopButton.addEventListener('click', () => {
+    if (audioPlayer.src) {
+      audioPlayer.pause();
+      audioPlayer.currentTime = 0; // Reset playback to the beginning
     }
 });
